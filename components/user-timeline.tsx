@@ -75,7 +75,7 @@ export default function UserTimeline({ events }: UserTimelineProps) {
             >
               {/* Time indicator - new ribbon design, positioned at the top of the card */}
               <div className={`absolute ${index % 2 === 0 ? '-right-3' : '-left-3'} -top-3 z-10`}>
-                <div className={`relative px-4 py-1 ${index % 2 === 0 ? 'bg-gradient-to-l' : 'bg-gradient-to-r'} from-green-400 to-teal-500 text-white text-xs font-medium shadow-md rounded-full flex items-center gap-1 animate-pop`} style={{ animationDelay: `${0.6 + index * 0.15}s` }}>
+                <div className={`relative px-4 py-1 ${index % 2 === 0 ? 'bg-gradient-to-l' : 'bg-gradient-to-r'} from-green-400 to-teal-500 text-white text-xs font-medium shadow-md rounded-full flex items-center gap-1 animate-pop font-fredoka`} style={{ animationDelay: `${0.6 + index * 0.15}s` }}>
                   <Clock className="h-3 w-3" />
                   {event.time}
                   <div className={`absolute ${index % 2 === 0 ? '-right-1' : '-left-1'} -bottom-1 h-3 w-3 rounded-full bg-green-600 shadow-inner`}></div>
@@ -93,10 +93,10 @@ export default function UserTimeline({ events }: UserTimelineProps) {
                 <div className={`absolute ${index % 2 === 0 ? 'left-0' : 'right-0'} top-0 h-14 w-14 bg-gradient-to-br from-green-400 to-teal-500 ${index % 2 === 0 ? 'transform rotate-90 clip-corner' : 'clip-corner'}`}></div>
               </div>
 
-              <h3 className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-700 to-teal-600">{event.title}</h3>
+              <h3 className="font-righteous text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-700 to-teal-600">{event.title}</h3>
 
               {event.additionalInfo && (
-                <div className="mt-2 flex flex-wrap gap-2 text-xs">
+                <div className="mt-2 flex flex-wrap gap-2 text-xs font-fredoka">
                   <span className="rounded-full bg-green-50 px-2 py-1 text-green-700 transition-colors duration-300 hover:bg-green-100 flex items-center gap-1">
                     <MapPin className="h-3 w-3" />
                     {event.additionalInfo.location}
@@ -114,7 +114,7 @@ export default function UserTimeline({ events }: UserTimelineProps) {
               
               {expandedEvent !== event.id && (
                 <button 
-                  className="mt-2 text-xs font-medium text-green-500 hover:text-green-600 transition-colors duration-300 flex items-center gap-1"
+                  className="mt-2 text-xs font-medium text-green-500 hover:text-green-600 transition-colors duration-300 flex items-center gap-1 font-fredoka"
                   onClick={(e) => {
                     e.stopPropagation();
                     setExpandedEvent(event.id);
@@ -146,7 +146,7 @@ export default function UserTimeline({ events }: UserTimelineProps) {
       <div className="relative mt-16 flex justify-center animate-pop" style={{ animationDelay: `${0.3 + events.length * 0.15}s` }}>
         <div className="flex flex-col items-center">
           <div className="h-5 w-5 rounded-full bg-green-500 ring-4 ring-white shadow-sm"></div>
-          <span className="mt-2 rounded-full bg-gradient-to-r from-green-500 to-teal-500 px-6 py-1 text-sm font-medium text-white shadow-sm">End</span>
+          <span className="mt-2 rounded-full bg-gradient-to-r from-green-500 to-teal-500 px-6 py-1 text-sm font-medium text-white shadow-sm font-pacifico">End</span>
         </div>
       </div>
     </div>

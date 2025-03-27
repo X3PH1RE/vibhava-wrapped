@@ -29,7 +29,7 @@ export default async function WrappedPage() {
           </div>
           <div className="text-right">
             <div className="relative">
-              <span className="font-serif italic text-3xl md:text-4xl bg-gradient-to-r from-green-500 via-teal-400 to-emerald-600 bg-clip-text text-transparent drop-shadow-sm">Wrapped</span>
+              <span className="font-pacifico italic text-3xl md:text-4xl bg-gradient-to-r from-green-500 via-teal-400 to-emerald-600 bg-clip-text text-transparent drop-shadow-sm">Wrapped</span>
               <Sparkles className="absolute -top-4 -right-6 h-5 w-5 text-yellow-400 animate-pulse" />
             </div>
           </div>
@@ -38,7 +38,7 @@ export default async function WrappedPage() {
         {/* Welcome Section */}
         <section className="mt-14 rounded-xl bg-white/70 p-8 shadow-sm backdrop-blur-sm transition-all duration-500 hover:shadow-md animate-slideUp">
           <div className="relative">
-            <h2 className="text-center text-3xl font-bold md:text-4xl tracking-tight">
+            <h2 className="text-center font-righteous text-3xl md:text-4xl tracking-tight">
               <span className="inline-block bg-gradient-to-r from-green-600 via-green-500 to-teal-500 bg-clip-text text-transparent pb-1">Welcome to Your Wrapped</span>
             </h2>
            
@@ -70,7 +70,7 @@ export default async function WrappedPage() {
                 During the event, you interacted with
               </p>
               <div className="mt-4 flex flex-col items-center">
-                <span className="text-7xl font-bold bg-gradient-to-b from-green-400 to-green-600 bg-clip-text text-transparent drop-shadow md:text-8xl animate-pulse">{userData.projectsVisited}</span>
+                <span className="font-righteous text-7xl md:text-8xl bg-gradient-to-b from-green-400 to-green-600 bg-clip-text text-transparent drop-shadow animate-pulse">{userData.projectsVisited}</span>
                 <span className="mt-2 text-xl font-medium text-gray-800 tracking-wide">
                   amazing projects
                 </span>
@@ -83,7 +83,7 @@ export default async function WrappedPage() {
         <section className="mt-12 text-center">
           <div className="rounded-xl bg-white/70 p-6 shadow-sm backdrop-blur-sm transition-all duration-500 hover:shadow-md animate-slideUp" style={{ animationDelay: '0.2s' }}>
             <div className="relative inline-block">
-              <h3 className="text-xl font-semibold text-gray-800 md:text-2xl bg-gradient-to-r from-green-600 to-teal-500 bg-clip-text text-transparent">Your Event Timeline</h3>
+              <h3 className="font-righteous text-xl md:text-2xl bg-gradient-to-r from-green-600 to-teal-500 bg-clip-text text-transparent">Your Event Timeline</h3>
               <div className="absolute -top-2 -right-4 transform rotate-12 text-teal-400 text-xs">✦</div>
               <div className="absolute -bottom-1 -left-4 transform -rotate-12 text-green-400 text-xs">✦</div>
             </div>
@@ -100,7 +100,7 @@ export default async function WrappedPage() {
 
         {/* Action Buttons */}
         <section className="mt-14 rounded-xl bg-white/70 p-8 shadow-sm backdrop-blur-sm transition-all duration-500 hover:shadow-md animate-slideUp" style={{ animationDelay: '0.4s' }}>
-          <h3 className="mb-6 text-center text-xl font-semibold md:text-2xl">
+          <h3 className="mb-6 text-center font-righteous text-xl md:text-2xl">
             <span className="relative inline-block">
               <span className="bg-gradient-to-r from-green-600 to-teal-500 bg-clip-text text-transparent">What's Next?</span>
               <span className="absolute -bottom-1 left-0 w-full h-px bg-gradient-to-r from-transparent via-green-400 to-transparent"></span>
@@ -132,7 +132,7 @@ export default async function WrappedPage() {
               concepts into <span className="italic">extraordinary</span> technological achievements through <span className="font-medium">boundless creativity</span>.
             </p>
           </div>
-          <p className="font-serif italic text-2xl text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-teal-400">Recapped</p>
+          <p className="font-pacifico italic text-2xl text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-teal-400">Recapped</p>
         </footer>
       </main>
     </div>
